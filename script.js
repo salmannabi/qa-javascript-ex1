@@ -100,3 +100,50 @@ switch(day) {
         console.log("What day is that?");
         break;
 }
+
+// Excercise Conditionals, Trythy/Falsey
+let num2 = 16;
+
+if (num >= 18 && num <= 65) {
+    console.log("Condition satisfied");
+} else if (num < 18) {
+    console.log("Condition less than 18 is triggered")
+}else {
+    console.log("Condition not satisfied");
+}
+
+let age = 40;
+
+age > 50 ? console.log("age is greater than 50") : console.log("age is not greater than 50");
+
+// Objects, Arrays and JSON
+let darthVader = {
+    allegiance: "Empire",
+    weapon: "Saber",
+    sith: true
+}
+
+console.log(darthVader);
+
+console.log(`Darth Vader's allegiance is to the ${darthVader.allegiance}`);
+console.log(`Darth Vader's weapon of choice is ${darthVader.weapon}`);
+console.log(`Darth Vader is a sith?: ${darthVader.sith}`);
+console.log(`Darth Vader is a Jedi?: ${darthVader.sith ? "false" : "true"}`);
+
+let myArray = ["hello", "everyone"];
+
+console.log(myArray.length);
+
+myArray.push("my");
+myArray.push("name");
+myArray.push("is");
+
+console.log(myArray.length);
+
+myArray.shift();
+
+console.log(myArray.length);
+
+for (let elem of myArray) {
+    console.log(elem);
+}
