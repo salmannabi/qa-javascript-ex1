@@ -147,3 +147,20 @@ console.log(myArray.length);
 for (let elem of myArray) {
     console.log(elem);
 }
+
+// Excercise Functions, function expressions and Arrow functions
+function sub(num1, num2) {
+    return num1 - num2;
+}
+
+console.log(sub(100, 10));
+
+function introString(name, age, gender) {
+    return `My name is ${name}, I am ${age} years old and I am a ${gender}`;
+}
+
+console.log(introString("Felix", 20, "Male"));
+
+answer = (n1, n2) => Math.pow(n1, n2);
+
+console.log(answer(3, 3));
